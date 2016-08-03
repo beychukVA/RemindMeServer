@@ -1,5 +1,6 @@
 package beichuk.ua.remindme.server;
 
+import beichuk.ua.remindme.server.config.DatabaseConfig;
 import beichuk.ua.remindme.server.config.WebConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -12,7 +13,7 @@ import javax.servlet.ServletRegistration;
 
 public class ApplicationInitializer implements WebApplicationInitializer
 {
-    private static final String DISPATCHER = "dspatcher";
+    private static final String DISPATCHER = "dispatcher";
 
     public void onStartup(ServletContext servletContext) throws ServletException
     {
